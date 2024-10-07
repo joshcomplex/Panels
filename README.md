@@ -1,6 +1,25 @@
-# Setting Up Your Python Virtual Environment
+# Panels Project
+> A Reflex template for even more rapid page development, created for the purpose of allowing Agentic management of content and.
 
-This guide will help you set up a Python virtual environment for your project.
+## Example Usage Hero Section
+Three different hero sections types that render the content you need how you need it, without having to dive into the code.
+
+```python
+        rx.color_mode.button(position="top-right"),
+        hero(type="video", source="https://www.youtube.com/embed/dQw4w9WgXcQ"),
+        hero(type="image", source="https://placehold.co/600x400"),
+        hero(type="form", source=registration_form(beta_signup())),
+```
+![Hero Section](<./assets/hero_types.png>)
+
+
+## Setting Up Your Python Virtual Environment
+This guide will help you set up a Python virtual environment for your project that uses Reflex, follows the documentation for: 
+- **Large Projects:** https://reflex.dev/blog/2024-03-27-structuring-a-large-app/  
+- **Styling:** https://reflex.dev/docs/guide/styling 
+- **Forms:** https://reflex.dev/docs/guide/forms
+
+# Setting Up Your Python Virtual Environment
 
 ## Step 1: Create a Virtual Environment
 
@@ -86,3 +105,26 @@ touch panels/template.py
 touch requirements.txt
 touch rxconfig.py
 ```
+
+
+# Panels Template Sections
+
+## 1. Hero Section
+- **Importance**: Captures visitors' attention and conveys the core message.
+- **Python Name**: `hero()`
+
+## 2. Showcase/Features Section
+- **Importance**: Highlights key features or services.
+- **Python Name**: `showcase()`
+
+## 3. Testimonials Section
+- **Importance**: Builds trust through customer reviews or case studies.
+- **Python Name**: `testimonials()`
+
+## 4. Call-to-Action (CTA) Section
+- **Importance**: Encourages user interaction or conversion.
+- **Python Name**: `cta()`
+
+## 5. Contact Section
+- **Importance**: Provides contact information or a form for inquiries.
+- **Python Name**: `form()`
