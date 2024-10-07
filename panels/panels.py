@@ -22,11 +22,11 @@ def index() -> rx.Component:
         hero(type="form", source=registration_form(beta_signup())),
 #        features(),
 #        showcase(),
+#        chat(),
 #        pricing(),
 #        faq(),
 #        cta(),
     )
-
 
 app = rx.App()
 app.add_page(index)
