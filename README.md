@@ -1,5 +1,5 @@
-# Panels Project
-> A Reflex template for even more rapid page development, created for the purpose of allowing Agentic management of content and.
+# Panels for Reflex Project
+> A Reflex template for even more rapid page development, created for the purpose of allowing Agentic management of content and design.
 
 ## Example Usage Hero Section
 Three different hero sections types that render the content you need how you need it, without having to dive into the code.
@@ -69,6 +69,38 @@ Finally, initialize Reflex with the following command:
 reflex init
 ```
 
+# Panels Template Sections
+### Current Status Table
+| Section Type          | Status       |
+|-----------------------|--------------|
+| Hero Section          | Draft completed |
+| Showcase/Features     | Not Started  |
+| Pricing               | Not Started  |
+| Call-to-Action (CTA)  | Not Started  |
+| Forms                 | In Progress  |
+
+## 1. Hero Section 
+- **Importance**: Captures visitors' attention and conveys the core message.
+- **Python Name**: `hero()`
+
+## 2. Showcase/Features Section
+- **Importance**: Highlights key features or services.
+- **Python Name**: `showcase()`
+
+## 3. Pricing Section
+- **Importance**: Builds the basic pricing structure for your product or service.
+- **Python Name**: `pricing()`
+
+## 4. Call-to-Action (CTA) Section
+- **Importance**: Encourages user interaction or conversion.
+- **Python Name**: `cta()`
+
+## 5. Pre Built Forms
+- **Importance**: Provides contact information or a form for inquiries.
+- **Python Name**: `registration_form(form_name)`
+
+
+
 ## Additional Notes
 
 - Make sure to activate the virtual environment each time you start a new terminal session for this project.
@@ -77,54 +109,3 @@ reflex init
 ```bash
 deactivate
 ```
-
-# Create the Project Structure if starting from scratch
-```bash
-mkdir -p assets
-mkdir -p panels/components
-mkdir -p panels/pages
-mkdir -p uploaded_files
-
-touch panels/components/__init__.py
-touch panels/components/auth.py
-touch panels/components/footer.py
-touch panels/components/menu.py
-touch panels/components/navbar.py
-touch panels/pages/__init__.py
-touch panels/pages/index.py
-touch panels/pages/login.py
-touch panels/pages/posts.py
-touch panels/pages/product.py
-touch panels/pages/profile.py
-touch panels/pages/schedule.py
-touch panels/__init__.py
-touch panels/panels.py
-touch panels/models.py
-touch panels/state.py
-touch panels/template.py
-touch requirements.txt
-touch rxconfig.py
-```
-
-
-# Panels Template Sections
-
-## 1. Hero Section
-- **Importance**: Captures visitors' attention and conveys the core message.
-- **Python Name**: `hero()`
-
-## 2. Showcase/Features Section
-- **Importance**: Highlights key features or services.
-- **Python Name**: `showcase()`
-
-## 3. Testimonials Section
-- **Importance**: Builds trust through customer reviews or case studies.
-- **Python Name**: `testimonials()`
-
-## 4. Call-to-Action (CTA) Section
-- **Importance**: Encourages user interaction or conversion.
-- **Python Name**: `cta()`
-
-## 5. Contact Section
-- **Importance**: Provides contact information or a form for inquiries.
-- **Python Name**: `form()`

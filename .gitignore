@@ -3,3 +3,17 @@
 .web
 __pycache__/
 assets/external/
+venv/
+venv
+./venv
+.mypy_cache/
+.DS_Store
+/.mypy_cache
+
+# Start Generation Here
+# Ignore the virtual environment folder
+venv/
+# Additional entries to ensure all variations are covered
+.venv/
+# End Generation Here
+./venv
