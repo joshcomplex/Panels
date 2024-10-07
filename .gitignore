@@ -15,5 +15,8 @@ venv
 venv/
 # Additional entries to ensure all variations are covered
 .venv/
+# Ensure all variations are covered
+# Add this line to ensure any venv folder is ignored
+*/venv/
 # End Generation Here
 ./venv
