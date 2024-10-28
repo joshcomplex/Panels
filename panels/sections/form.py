@@ -4,24 +4,16 @@ Prebuilt forms to add to pages.
 import reflex as rx
 from panels.components.style import create_link
 
-def create_submit_button():
+def create_submit_button(button_text, tag, color_scheme):
     """Create a styled submit button for the beta signup form."""
-    return rx.el.button(
-        "Get Early Access",
+    return rx.button(
+        button_text,
+        tag=tag,
+        color_scheme=color_scheme,
+
         type="submit",
-        background_color="#2563EB",
-        transition_duration="300ms",
-        font_weight="600",
-        _hover={"background-color": "#1D4ED8"},
-        padding_left="1.5rem",
-        padding_right="1.5rem",
-        padding_top="0.75rem",
-        padding_bottom="0.75rem",
-        border_radius="0.5rem",
-#        color="#ffffff",
-        transition_property="background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
-        transition_timing_function="cubic-bezier(0.4, 0, 0.2, 1)",
-        width="100%",
+        
+        button = rx.button(on_click=ClickState.change_text)
     )
 def create_form_label(label_text):
     """Create a styled label for form inputs."""
@@ -87,7 +79,7 @@ def beta_signup():
                 input_name="email",
                 input_type="email",
             ),
-            create_submit_button(),
+            create_submit_button("Get Early Access"),
             display="flex",
             flex_direction="column",
             gap="1.5rem",
