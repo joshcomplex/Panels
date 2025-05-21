@@ -147,6 +147,7 @@ def create_main_content():
     )
 
 
+
 def create_animated_background_page():
     """Creates the main page with an animated background, YouTube video, and interactive elements."""
     return rx.fragment(
